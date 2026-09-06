@@ -416,6 +416,88 @@
       font-style: italic;
     }
 
+    /* ---------- combo platters showcase (pops out of the feature band) ---------- */
+    .combo-showcase {
+      position: relative;
+      margin-top: 34px;
+      padding: 30px 34px 26px;
+      border: 2px solid var(--gold);
+      border-radius: 10px;
+      background:
+        radial-gradient(600px 200px at 50% 0%, rgba(182, 135, 63, 0.22), transparent 70%),
+        rgba(242, 232, 211, 0.05);
+      box-shadow:
+        0 0 0 5px rgba(182, 135, 63, 0.14),
+        0 16px 34px rgba(0, 0, 0, 0.35);
+    }
+
+    .combo-tag {
+      display: block;
+      width: max-content;
+      margin: 0 auto 12px;
+      background: var(--gold);
+      color: var(--forest-deep);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .combo-showcase .feature-head .word {
+      font-size: 24px;
+      letter-spacing: 7px;
+      color: var(--gold-soft);
+    }
+
+    .combo-showcase .platter {
+      background: rgba(182, 135, 63, 0.10);
+      border: 1.5px solid var(--gold-soft);
+      border-left: 5px solid var(--gold);
+      border-radius: 6px;
+      padding: 18px 22px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .combo-showcase .platter:last-child {
+      margin-bottom: 0;
+    }
+
+    .combo-showcase .platter .ptitle {
+      font-size: 18px;
+      flex-wrap: wrap;
+      row-gap: 6px;
+    }
+
+    .combo-showcase .platter .ptitle .price {
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--forest-deep);
+      background: var(--gold-soft);
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+
+    .combo-showcase .platter .pdesc {
+      color: rgba(242, 232, 211, 0.88);
+    }
+
+    .pop-badge {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      border: 1px solid var(--gold-soft);
+      border-radius: 10px;
+      padding: 2px 9px;
+    }
+
     footer {
       text-align: center;
       padding-top: 22px;
@@ -848,12 +930,13 @@
           </div>
         </div>
 
-        <div style="margin-top:30px;">
+        <div class="combo-showcase">
           <div class="feature-head" style="margin-bottom:16px;">
-            <div class="word" style="font-size:20px;letter-spacing:6px;">Combo Platters</div>
+            <span class="combo-tag">&#9733; Chef's Specials &#9733;</span>
+            <div class="word">Combo Platters</div>
           </div>
           <div class="platter">
-            <div class="ptitle"><span>Special Pot Combo Platter</span><span class="price">Rs. 1399</span></div>
+            <div class="ptitle"><span>Special Pot Combo Platter <span class="pop-badge">Most Popular</span></span><span class="price">Rs. 1399</span></div>
             <div class="pdesc">Hookah with snacks &middot; flavour optional &middot; french fries, sausage, chow chow
               sadeko, momo, hot wings, chicken C momo, alu chop, pakauda</div>
           </div>
